@@ -74,7 +74,13 @@ describe("🚀 Testes da API de Funcionários", () => {
   });
 
   // PUT — Atualizar
-  // Criar....
+  it("PUT /funcionario deve atualizar um novo funcionario", async () => {
+    const atFuncionario = { nome: "gabriel", salario: 5000 };
+    const res = await request(app).put("/funcionario/1").send(atFuncionario);
+
+    expect(res.status).toBe(200);
+    expect(res.body.nome).toBe("gabriel");
+  });
 
   // DELETE — Remover..
   
