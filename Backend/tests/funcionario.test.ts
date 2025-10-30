@@ -45,7 +45,7 @@ jest.mock("mysql2", () => ({
 
 describe("🚀 Testes da API de Funcionários", () => {
 
-  // POST — Criar funcionário
+  // POST — Criar funcionário..
   it("POST /funcionario deve criar um novo funcionário", async () => {
     const novoFuncionario = { nome: "João", salario: 3000 };
     const res = await request(app).post("/funcionario").send(novoFuncionario);
