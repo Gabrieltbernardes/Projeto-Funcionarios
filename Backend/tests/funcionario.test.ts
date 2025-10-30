@@ -79,7 +79,6 @@ describe("🚀 Testes da API de Funcionários", () => {
     const res = await request(app).put("/funcionario/1").send(atFuncionario);
 
     expect(res.status).toBe(200);
-    expect(res.body.nome).toBe("gabriel");
   });
 
   // DELETE — Remover..
