@@ -76,7 +76,7 @@ describe("🚀 Testes da API de Funcionários", () => {
   // PUT — Atualizar
   // Criar....
 
-  // DELETE — Remover
+  // DELETE — Remover..
   
   it("DELETE /funcionario/:cod deve deletar um funcionário existente", async () => {
     const res = await request(app).delete("/funcionario/1");
